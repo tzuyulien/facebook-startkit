@@ -32,7 +32,7 @@
 Parse.initialize("ZZjkRb1JT5eHPOmGbCW91TbRaOvKb09t3aC4WZdH", "P8Q1MH6JzWk9vxr61Stl9zNd8kbZ9rggmoeDRMmw");		
 		      window.fbAsyncInit = function() {
 		    Parse.FacebookUtils.init({ // this line replaces FB.init({
-		      appId      : '{facebook-app-id}', // Facebook App ID
+		      appId      : '{840606712700068}', // Facebook App ID
 		      status     : true,  // check Facebook Login status
 		      cookie     : true,  // enable cookies to allow Parse to access the session
 		      xfbml      : true,  // initialize Facebook social plugins on the page
@@ -59,6 +59,12 @@ Parse.initialize("ZZjkRb1JT5eHPOmGbCW91TbRaOvKb09t3aC4WZdH", "P8Q1MH6JzWk9vxr61S
 		 } else {
 		 alert("User logged in through Facebook!");
 		 }
+		  indexView(); //這是預先寫好的控制版⾯的function，⾮臉書api
+		 FB.getLoginStatus(function(response) {
+		 if (response.status === 'connected') {
+		 //等等要在這邊加程式碼 使⽤FB.api()
+		 }
+		 });
 		 //等等要在這邊加程式碼 FB.getLoginStatus
 		 },
 		 error: function(user, error) {
