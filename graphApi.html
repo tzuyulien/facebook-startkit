@@ -70,7 +70,7 @@ Parse.initialize("ZZjkRb1JT5eHPOmGbCW91TbRaOvKb09t3aC4WZdH", "P8Q1MH6JzWk9vxr61S
 		 });
 		//個⼈資訊
 		 FB.api('/me',function(response) {
-		 $('#fbImgView').append("<h1>Welcome ,+(response['gender']=="male"?"Mr. ":"Miss ")
+		 $('#fbImgView').append("<h1>Welcome" ,+(response['gender']=="male"?"Mr. ":"Miss ")
 		+" "+response['first_name']+"</h1>");
 		 });
 		 }
